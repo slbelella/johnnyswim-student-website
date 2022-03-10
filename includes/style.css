@@ -1,0 +1,456 @@
+/*Font*/
+p {
+  font-family: Poppins;
+  font-size: 100%;
+  text-align: center;
+}
+
+h1 {
+  font-family: Fairwater Deco Serif Regular;
+  text-align: center;
+}
+
+h2 {
+  font-family: Poppins;
+  font-size: 100%;
+}
+
+h3 {
+  font-family: Poppins;
+  font-size: 100%;
+  text-align: center;
+}
+
+h4 {
+  font-family: Fairwater Deco Serif Regular;
+  font-size: 200%;
+  text-align: center;
+}
+
+/* Icons */
+ul {
+  display: flex;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 35px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 4px solid #e1caaf;
+  z-index: 1;
+}
+
+ul li a .icon {
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  z-index: 3;
+}
+
+ul li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: .5s;
+  z-index: 2;
+}
+
+ul li a:hover:before {
+  top: 0;
+}
+
+ul li:nth-child(1) a:before{
+  background: #3b5999;
+}
+
+ul li:nth-child(2) a:before{
+  background: #55acee;
+}
+
+ul li:nth-child(3) a:before {
+  background: #0077b5;
+}
+
+/* Images */
+.logo {
+  background-color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.show {
+  text-align: center;
+  background-color: #e1caaf;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.friends {
+  float: left;
+  width: 40%;
+  margin-right: 20px;
+}
+
+.family {
+  margin-top: 100px;
+}
+
+
+/* Container */
+.article {
+  background-color: #769e71;
+  padding: 20px;
+  border: 6px solid #e1caaf;
+  margin-bottom: 50px;
+}
+
+.magnolia {
+  background-color: #e1caaf;
+  padding: 20px;
+  border: 6px solid #769e71;
+  margin-bottom: 20px;
+}
+
+.tickets a {
+  color: black;
+  text-decoration: none;
+}
+
+.tickets a:hover {
+  color: #769e71;
+}
+
+.wrapper {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Navigation */
+nav, .nav2 {
+    font-family: poppins;
+    font-size: 150%;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+nav a {
+    color: black;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+nav a:hover {
+    text-decoration: none;
+    background-color: #769e71;
+    color: white;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover, a:visited {
+  text-decoration: none;
+}
+
+/* Button */
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.btn2 {
+  background-color: #769e71;
+  font-family: Fairwater Deco Serif Regular;
+  font-size: 30px;
+  color: black;
+  margin-bottom: 20px;
+  padding: 4px;
+}
+
+.btn2:hover {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+
+.btn3 {
+  background-color: #769e71;
+  font-family: Fairwater Deco Serif Regular;
+  font-size: 30px;
+  color: black;
+  margin-bottom: 20px;
+  padding: 2px;
+}
+
+.btn3:hover {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+
+.submit {
+  background-color: #769e71;
+  font-family: Fairwater Deco Serif Regular;
+  font-size: 30px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.submit:hover {
+  background-color: black;
+  color: white;
+}
+
+.btn {
+  text-decoration: none;
+  color: black;
+  font-family: poppins;
+  font-size: 150%;
+}
+
+.btn:hover {
+  color: #769e71;
+}
+
+/* Make the image responsive */
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #769e71;
+  color: white;
+  font-size: 30px;
+  font-family: Fairwater Deco Serif Regular;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container .btn:hover {
+  background-color: black;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+/* Bio Cards */
+.box{
+  width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 15px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card{
+  position: relative;
+  width: 300px;
+  height: 350px;
+  background: #e1caaf;
+  margin: 0 auto;
+  border-radius: 4px;
+  box-shadow:0 2px 10px rgba(0,0,0,.2);
+}
+.card:before,
+.card:after
+{
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background: #e1caaf;
+  transition: 0.5s;
+  z-index:-1;
+}
+.card:hover:before{
+transform: rotate(20deg);
+box-shadow: 0 2px 20px rgba(0,0,0,.2);
+}
+.card:hover:after{
+transform: rotate(10deg);
+box-shadow: 0 2px 20px rgba(0,0,0,.2);
+}
+.card .imgBx{
+position: absolute;
+top: 10px;
+left: 10px;
+bottom: 10px;
+right: 10px;
+background: #222;
+transition: 0.5s;
+z-index: 1;
+}
+
+.card:hover .imgBx
+{
+  bottom: 80px;
+}
+
+.card-title {
+  text-decoration: none;
+  color: black;
+}
+
+.card-title:hover {
+  color: #769e71;
+}
+
+.card .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .details{
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 60px;
+    text-align: center;
+}
+
+.card .details h2{
+ margin: 0;
+ padding: 0;
+ font-weight: 600;
+ font-size: 20px;
+ color: black;
+ text-transform: uppercase;
+} 
+
+.card .details h2 span{
+font-weight: 500;
+font-size: 16px;
+color: #769e71;
+display: block;
+margin-top: 5px;
+ } 
+
+/* Bio Container */
+.johnnyswim {
+  position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 20px;
+}
+
+/* Event Table */
+.wrap {
+  width: 700px;
+  margin: 0 auto;
+  background: white;
+  font-family: poppins;
+  font-size: 100%;
+}
+table {
+  border: 3px solid #769e71;
+  margin: 5px 0;
+}
+
+/* iframe */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.iframe {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.news {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.signup-form-form {
+  text-align: center;
+}
+
+@media screen and (max-width: 1300px) {
+  .wrap {
+    width: 100%;
+  }
+
+  .nav a:hover, .nav2 a:hover {
+    padding: 5px;
+  }
+
+  .box {
+    margin-bottom: 60px;
+    grid-template-columns: none;
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .card {
+    margin-bottom: 40px;
+  }
+}
