@@ -26,25 +26,21 @@ require 'includes/header.html';
       <div class="carousel-item active">
         <img class="d-block w-100" src="images/collab.jpg" alt="Behind the scenes">
         <div class="carousel-caption d-none d-md-block">
-          <h3>Johnnyswim Behind the Scenes</h3>
         </div>
       </div>
       <div class="carousel-item">
         <img class="d-block w-100" src="images/fam.jpg" alt="Family">
         <div class="carousel-caption d-none d-md-block">
-          <h3>Family</h3>
         </div>
       </div>
       <div class="carousel-item">
         <img class="d-block w-100" src="images/sudano.jpg" alt="Amanda Sudano"> 
         <div class="carousel-caption d-none d-md-block">
-          <h3>Amanda Sudano</h3>
         </div>
       </div>
       <div class="carousel-item">
         <img class="d-block w-100" src="images/ramirez.jpg" alt="Abner Ramirez">
         <div class="carousel-caption d-none d-md-block">
-          <h3>Abner Ramirez</h3>
         </div>
       </div>
     </div>
